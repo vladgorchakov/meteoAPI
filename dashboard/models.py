@@ -14,7 +14,11 @@ class SensorType(models.Model):
     value_type = models.ForeignKey(SensorValueType, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
+<<<<<<< HEAD
         return f'{self.title} ({self.value_type})'
+=======
+        return f'{self.title}'
+>>>>>>> e2f240d8d4b6d94bd3048fba388a586d4c2d95b1
 
 
 class Place(models.Model):
