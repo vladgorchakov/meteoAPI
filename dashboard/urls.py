@@ -12,3 +12,4 @@ urlpatterns = [
     path('sensors/valuetype/', SensorValueTypeListApi.as_view()),
     path('sensors/valuetype/<int:pk>', SensorValueTypeUpdateApi.as_view()),
 ]
+
