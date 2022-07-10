@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Monitoring, Sensor, SensorType, SensorValueType
+from .models import Monitoring, Sensor, SensorType, SensorValueType, Place
 
 
 class DashboardSerializer(serializers.ModelSerializer):
@@ -24,3 +24,9 @@ class SensorValueTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = SensorValueType
         fields = ('id', 'title',)
+
+
+class PlaceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Place
+        fields = ('id', 'room')

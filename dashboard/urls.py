@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import DashboardListApi, SensorListApi, SensorUpdateApi, SensorTypeListApi, SensorTypeUpdateApi, \
-    SensorValueTypeListApi, SensorValueTypeUpdateApi
+    SensorValueTypeListApi, SensorValueTypeUpdateApi, PlaceList, PlaceUpdate
 
 
 urlpatterns = [
@@ -11,5 +11,6 @@ urlpatterns = [
     path('sensors/type/<int:pk>', SensorTypeUpdateApi.as_view()),
     path('sensors/valuetype/', SensorValueTypeListApi.as_view()),
     path('sensors/valuetype/<int:pk>', SensorValueTypeUpdateApi.as_view()),
+    path('sensors/place/', PlaceList.as_view()),
+    path('sensors/place/<int:pk>/', PlaceUpdate.as_view()),
 ]
-
