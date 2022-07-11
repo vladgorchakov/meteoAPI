@@ -1,7 +1,7 @@
 from rest_framework import generics
 from .serializers import DashboardSerializer, SensorSerializer, SensorTypeSerializer, \
     SensorValueTypeSerializer, PlaceSerializer
-from .models import Monitoring, Sensor, SensorType, SensorValueType, Place
+from .models import Monitoring, Sensor, SensorType, SensorValueType, Place, User
 
 
 class DashboardListApi(generics.ListCreateAPIView):
